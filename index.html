@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -18,29 +19,36 @@
           class="inline-block"
         />
       </div>
-      <div>
+      <div class="hidden md:block">
+        <!-- Added responsiveness -->
         <a href="#" class="text-gray-700 mr-6 text-xl">pona.ai</a>
-        <!-- <a href="#" class="text-gray-700 mr-6">Sign in</a> -->
         <a
-          href="https://tally.so/r/3xQGl9"
+          href="https://tally.so/r/mD5zDX"
           class="bg-black text-white py-3 px-5 rounded-md"
           >Get Access</a
         >
       </div>
+      <div class="md:hidden">
+        <!-- Added mobile menu icon -->
+        <i class="fas fa-bars text-xl"></i>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-center py-24">
-      <h1 class="text-7xl font-bold text-gray-800 max-w-3xl mx-auto">
-        Unlock your data with knowledge graphs
+    <section class="text-center py-12 md:py-24">
+      <h1
+        class="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 mx-4 md:max-w-3xl mx-auto"
+      >
+        Revolutionizing Engineering Efficiency with AI
       </h1>
-      <p class="text-lg text-gray-600 mt-4">
-        Sign up for our <b>exclusive</b> beta.
+      <p class="text-xl sm:text-2xl text-gray-600 mt-4 mx-4">
+        Automate regulatory and compliance tasks, allowing engineers to focus on
+        what they do best.
       </p>
-      <div class="mt-8 flex justify-center">
+      <div class="mt-4 md:mt-8 flex justify-center">
         <a
-          href="https://tally.so/r/3xQGl9"
-          class="bg-black text-white text-lg py-3 px-5 rounded-md"
+          href="https://tally.so/r/mD5zDX"
+          class="bg-black text-white text-md md:text-lg py-3 px-5 rounded-md"
         >
           Get Access
         </a>
@@ -48,126 +56,89 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-gray-50 px-4">
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section class="py-12 md:py-24 bg-gray-50 px-4">
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
         <!-- Feature 1 -->
-        <div class="bg-white p-8 shadow rounded">
-          <i class="fas fa-bullseye text-3xl text-black mb-4"></i>
-          <h3 class="text-2xl font-bold mb-4">Advanced Data Extraction</h3>
+        <div class="bg-white p-6 md:p-8 shadow rounded">
+          <i class="fas fa-tags text-3xl text-black mb-4"></i>
+          <h3 class="text-xl md:text-2xl font-bold mb-4">Automated Tagging</h3>
           <p class="text-gray-600 mb-6">
-            Extract key information from contracts, company data, academic
-            papers, etc. Identify important points quickly.
+            Extract engineering tags from complex documents, diagrams, and
+            schematics automatically.
           </p>
-          <a href="https://tally.so/r/3xQGl9" class="text-black font-bold"
+          <a href="https://tally.so/r/mD5zDX" class="text-black font-bold"
             >Sign up &rarr;</a
           >
         </div>
         <!-- Feature 2 -->
-        <div class="bg-white p-8 shadow rounded">
-          <i class="fas fa-project-diagram text-3xl text-black mb-4"></i>
-          <h3 class="text-2xl font-bold mb-4">Knowledge Graph Construction</h3>
+        <div class="bg-white p-6 md:p-8 shadow rounded">
+          <i class="fas fa-check-circle text-3xl text-black mb-4"></i>
+          <h3 class="text-xl md:text-2xl font-bold mb-4">
+            Compliance Verification
+          </h3>
           <p class="text-gray-600 mb-6">
-            Map out complex relationships between entities. Build context-aware
-            knowledge graphs for intelligent searches.
+            Instantly verify that bids, equipment, and other elements match
+            project requirements and standards.
           </p>
-          <a href="https://tally.so/r/3xQGl9" class="text-black font-bold"
+          <a href="https://tally.so/r/mD5zDX" class="text-black font-bold"
             >Sign up &rarr;</a
           >
         </div>
         <!-- Feature 3 -->
-        <div class="bg-white p-8 shadow rounded">
-          <i class="fas fa-search text-3xl text-black mb-4"></i>
-          <h3 class="text-2xl font-bold mb-4">Smart Search and Analysis</h3>
+        <div class="bg-white p-6 md:p-8 shadow rounded">
+          <i class="fas fa-file-export text-3xl text-black mb-4"></i>
+          <h3 class="text-xl md:text-2xl font-bold mb-4">
+            Export Functionality
+          </h3>
           <p class="text-gray-600 mb-6">
-            Experience searches that understand context. Our system pulls
-            relevant information without constant re-indexing.
+            Export tags directly to Excel for seamless integration into your
+            workflows.
           </p>
-          <a href="https://tally.so/r/3xQGl9" class="text-black font-bold"
+          <a href="https://tally.so/r/mD5zDX" class="text-black font-bold"
+            >Sign up &rarr;</a
+          >
+        </div>
+        <!-- Feature 4 -->
+        <div class="bg-white p-6 md:p-8 shadow rounded">
+          <i class="fas fa-plug text-3xl text-black mb-4"></i>
+          <h3 class="text-xl md:text-2xl font-bold mb-4">API Integration</h3>
+          <p class="text-gray-600 mb-6">
+            Integrate our tagging capabilities into your systems with our robust
+            API.
+          </p>
+          <a href="https://tally.so/r/mD5zDX" class="text-black font-bold"
             >Sign up &rarr;</a
           >
         </div>
       </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <!-- <section class="py-24 bg-slate-800 text-center">
-      <div class="max-w-3xl mx-auto">
-        <p class="text-xl text-gray-300 mb-6">
-          “With pona.ai, we've seen
-          <span class="text-white font-bold">1000% profit growth</span> day
-          over day and now we have more money than we can spend.”
-        </p>
-        <div class="flex justify-center items-center space-x-4">
-          <img
-            src="https://placehold.co/50x50"
-            alt="Chi Efexecu Tiiv-Ofiser photo"
-            class="rounded-full"
-          />
-          <div class="text-left">
-            <p class="text-xl font-bold text-white">
-              Chi EfExecu Tiiv-Ofiser, VP of Money Making
-            </p>
-            <p class="text-gray-300">Google</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Logos Section -->
-    <!-- <section class="py-24 text-center">
-      <h2 class="text-2xl font-bold text-gray-800">
-        1 trillion+ of the world’s most successful companies, big and small, trust us.
-      </h2>
-      <div class="flex justify-center items-center space-x-6 mt-8">
-        <img src="https://placehold.co/100x50" alt="Google's Logo" />
-        <img src="https://placehold.co/100x50" alt="Wikipedia's Logo" />
-        <img src="https://placehold.co/100x50" alt="Apple's Logo" />
-        <img src="https://placehold.co/100x50" alt="Shopify Logo" />
-        <img src="https://placehold.co/100x50" alt="Y Combinator Logo" />
-      </div>
-      <div class="mt-6">
-        <a href="#" class="text-black font-bold"
-          >Read success stories &rarr;</a
-        >
-      </div>
-    </section> -->
-
     <!-- Call to Action Section -->
-    <section class="py-24 bg-slate-800 text-center">
+    <section class="py-12 md:py-24 bg-slate-800 text-center">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-200">Try pona.ai Today</h2>
-        <p class="text-lg text-gray-300 mb-8">
-          The #1 knowledge graph platform for businesses.
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-200">
+          Try Pona AI Today
+        </h2>
+        <p class="text-md md:text-lg text-gray-300 mb-4 md:mb-8">
+          Enhance productivity, reduce errors, and focus on impactful work.
         </p>
         <div class="flex justify-center">
-          <!-- <input
-            type="email"
-            placeholder="Your work email"
-            class="border border-gray-600 py-2 px-4 rounded-l-md"
-          /> -->
           <a
-            href="https://tally.so/r/3xQGl9"
-            class="bg-white text-black text-lg py-3 px-5 rounded-md"
+            href="https://tally.so/r/mD5zDX"
+            class="bg-white text-black text-md md:text-lg py-3 px-5 rounded-md"
           >
             Get Access
           </a>
         </div>
-        <!-- <div class="mt-4 flex justify-center space-x-4 text-gray-300">
-          <div>✔️ Trial</div>
-          <div>✔️ Easy setup</div>
-          <div>✔️ Cancel anytime</div>
-        </div> -->
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 bg-gray-100 text-center">
+    <footer class="py-4 md:py-6 bg-gray-100 text-center">
       <div class="space-x-4 text-blue-950">
-        <p>&copy; 2024 pona.ai</p>
-        <!-- <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-        <a href="#">Status</a>
-        <a href="#">Security</a> -->
+        <p>&copy; 2024 Pona AI</p>
       </div>
     </footer>
   </body>
